@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to our website</h1>
+        <p>We provide high quality products and services</p>
+        <button>Learn More</button>
+      </div>
+    </section>
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="img/portfolio-item1.jpg" alt="Portfolio Item 1" />
+          <h3>Portfolio Item 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/portfolio-item2.jpg" alt="Portfolio Item 2" />
+          <h3>Portfolio Item 2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/portfolio-item3.jpg" alt="Portfolio Item 3" />
+          <h3>Portfolio Item 3</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/portfolio-item4.jpg" alt="Portfolio Item 4" />
+          <h3>Portfolio Item 4</h3>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <h3>Contact Us</h3>
+        <form class="footer-form">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Example Website. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
